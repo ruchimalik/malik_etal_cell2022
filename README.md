@@ -1,4 +1,4 @@
-# Malik_etal_Cell2022
+# malik_etal_cell2022
 Custom code used in the paper
 
 ## Top-down control of hippocampal signal-to-noise by prefrontal long-range inhibition
@@ -7,7 +7,7 @@ Department of Psychiatry and Behavioral Sciences, UCSF Weill Institute for Neuro
 
 [Google scholar](https://scholar.google.com/citations?user=8ohKDNsAAAAJ&hl=en)
 
-## The repoistory contains custom codes for following analysis:
+## The repoistory contains custom codes for following analyses:
 1) LFP data analysis
 2) Photometry data analyis 
 3) Ex-vivo slice physiology data analysis
