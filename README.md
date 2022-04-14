@@ -1,5 +1,6 @@
 # Malik_etal_Cell2022
-Custom code used in the paper
+Custom code used in the paper.
+
 The repoistory contains custom codes for following analyis:
 1) LFP data analysis
 2) Photometry data analyis 
