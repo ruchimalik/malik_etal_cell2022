@@ -12,3 +12,6 @@ Department of Psychiatry and Behavioral Sciences, UCSF Weill Institute for Neuro
 2) Photometry data analyis 
 3) Ex-vivo slice physiology data analysis
 4) One-photon calcium imaging data analyis
+
+## To do
+Add example datasets for each type of analysis
