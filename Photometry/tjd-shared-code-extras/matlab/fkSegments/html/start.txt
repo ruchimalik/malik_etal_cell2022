@@ -1,1 +1,0 @@
-segment demo:seg_demo:demoicon
