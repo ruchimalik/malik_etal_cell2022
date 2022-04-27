@@ -1,5 +1,5 @@
 %function [maxval,lagtime,pls,plsphase,wpli] = laglead6(x,y,dt,fmin,fmax)
-function [maxval,lagtime,pls,plsphase,wpli,coh,Ctmp,lags, pli, PSI] = laglead6(x,y,dt,fmin,fmax)
+function [maxval,lagtime,pls,plsphase,wpli,coh,Ctmp,lags, pli, PSI] = laglead(x,y,dt,fmin,fmax)
 
 
 % modified by RM on 5/21/19 -- added lagtime estimate

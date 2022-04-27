@@ -9,6 +9,7 @@ function [allPower, allCovar, allCovarPhase, allPLS, allPlsPhase, allWpli, ...
 % 2 electrodes/1 pair, such as PFC/HPC recordings
 
 % Modfied by Margaret Cunniff from lagleadscript (Sept 2016)
+% Modified by Ruchi Malik (April 2020)
 % Input arguments: 
     % filelist - txt file including EDF file & associated annotation file
     % fileprefix - prefix specifying name/location of output csv files
@@ -29,8 +30,7 @@ function [allPower, allCovar, allCovarPhase, allPLS, allPlsPhase, allWpli, ...
 %     electrodeIDs = {'Hpc';'Pfc'};
     
     % SETUP - ESTABLISHING RESULTS VECTORS, ETC
-    
-%    freqbands =[15 25; 25 55; 65 85];
+
     freqbands =[4 12; 15 25; 25 55; 65 85]; % frequency bands to use for analysis [4 12; 15 25;]
     nbands = size(freqbands,1);
     nchannels = size(channelIDs,2); % number of recording electrodes
@@ -136,7 +136,7 @@ function [allPower, allCovar, allCovarPhase, allPLS, allPlsPhase, allWpli, ...
 
         disp('Calculating coherence measures')
         [fileCovar, fileCovarPhase, filePLS, filePlsPhase, fileWpli, fileCoh,filePli,filePSI, trialCovar,trialCovarPhase, trialPLS, trialPlsPhase, trialWpli, trialCoh, trialPli, trialPSI] =...
-            expLagLead_MC(eegfile, timefile, freqbands, channels, types);
+            expLagLead(eegfile, timefile, freqbands, channels, types);
         % fileX - vector of average values for given experiment for each trial type
         % trialX - cell arrays containing all individual values for every trial
         
